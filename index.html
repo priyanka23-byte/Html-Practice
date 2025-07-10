@@ -1,0 +1,301 @@
+<!-- HTML(hypertext markup language) is use the design the layout of the website -->
+
+<!DOCTYPE html>
+
+<!-- HTML-> root of the HTML document -->
+<html lang="en">
+  <!-- head contains all the meta tag  used by the browser -->
+  <head>
+    <!-- CHARSET="utf-8 is the set of the character ,allowing it to display most characters from all languages correctly." -->
+    <meta charset="UTF-8" />
+
+    <!-- VIEWPORT =makes the webpage responsive by setting the width to match the device's screen and scaling it properly on all devices. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE=specific title of the  document -->
+    <title>Practicing HTML</title>
+  </head>
+
+  <!-- body contains the visible content of the website -->
+  <body>
+    <!-- HEADING are defined using the <h1> to <h6> tags:h1 is largest & h6 is smallest -->
+    <h1>Largest Heading</h1>
+    <h2>Heading2</h2>
+    <h3>Heading3</h3>
+    <h4>Heading4</h4>
+    <h5>Heading5</h5>
+    <h6>Smallest Heading</h6>
+
+    <!-- DIV is a container that contains element , it is a block level element, takes full width  -->
+    <div>
+      <p>
+        Paragraph- Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </p>
+
+      <!--ATTRIBUTE = An attribute provides additional information about an HTML element. It is always specified in the opening tag. -->
+
+      <!-- ANCHOR TAG is used to create link b/w to documents-->
+      <a href="https://www.google.com">home</a>
+
+      <!-- HREF is the artibute which indicates destination document. -->
+
+      <!--RELATIVE LINK=which points to the file within the website , whereas ABSOLUTE LINKS = points to the another website-->
+
+      <!--  TARGET attribute is used in anchor (<a>) tags to define where to open the linked document. -->
+      <a href="https://www.example.com" target="_self">Open in same tab</a>
+      <a href="https://www.example.com" target="_blank">Open in new tab</a>
+
+      <hr />
+      <!-- TEXT -->
+      <h3>TEXT</h3>
+      <b>Bold</b>
+      <strong>Emphasize text ,new standard for bold</strong>
+      <i>Italic</i>
+      <em>Emphasize text, new standard for italic.</em>
+      <u>Underline</u>
+      <s>Strike the text</s>
+
+      <!--break the line  -->
+      <br />
+      <!-- horizontal ruler -->
+      <hr />
+
+      <!-- subscript-which appears below the normal text line. -->
+      <p>H <sub>2</sub> O</p>
+
+      <!-- Superscript-which appear above the normal text line -->
+      <p>a <sup>2</sup>+ b <sup>2</sup></p>
+
+      <!-- Pretag=to display as it is,it preserves the spaces,tab and line break -->
+      <pre>
+                        my name 
+                        is Priyanka
+                        i am a frontend developer
+                      </pre
+      >
+
+      <!-- SPAN= inline container,it takes space as much needed. -->
+      <span></span>
+      <hr />
+
+      <h3>LISTS</h3>
+
+      <!-- LISTS= is a collection of items and they are 3 types -->
+      <!-- 1-UNODERED LIST= to display items randomly(by default symbol is dot(.) we can change by give it type value example-cicrle ,square) -->
+      <ul type="square">
+        <li>Apple</li>
+        <li>banana</li>
+        <li>orange</li>
+      </ul>
+      <!-- 2-ODERED LIST = to display in order (by default symbol is number, )  -->
+      <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </ol>
+
+      <!-- 3-DEFINITION LIST = is used to specify list of terms and their definition-->
+      <!-- <dl>Definition list ,<dt> definition terms , <dd>definition description-->
+
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+      </dl>
+      <hr />
+      <!-- Nested list= one list inside another -->
+
+      <ul>
+        Web Development
+        <li>
+          Frontend Development
+          <ul>
+            HTML
+          </ul>
+          <ul>
+            CSS
+          </ul>
+          <ul>
+            js
+          </ul>
+          <ul>
+            react
+          </ul>
+        </li>
+        <li>
+          Backend Development
+          <ul>
+            Node.js
+          </ul>
+          <ul>
+            Mongodb
+          </ul>
+        </li>
+      </ul>
+
+      <hr />
+      <h3>TABLES</h3>
+      <!-- tables = is the matrix of rows and columns, th-table heading, tr- table row, td- table data, caption - insert caption to the table-->
+      <!-- cell padding- it specifics the space b/w content of cells and its border in pixels -->
+      <!-- cell spacing- it specifics the space b/w space betweenn cells -->
+
+      <table border="1">
+        <caption>
+          Students Details
+        </caption>
+        <tr>
+          <th>Roll no</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Section</th>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Satyam</td>
+          <td>12</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Satyam</td>
+          <td>12</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Satyam</td>
+          <td>12</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Satyam</td>
+          <td>12</td>
+          <td>A</td>
+        </tr>
+      </table>
+      <hr />
+
+      <h3>example of complex table</h3>
+      <!-- colspan-is used to make one cell span across multiple columns. -->
+      <!-- rowspan- to span multiple rows vertically.-->
+
+      <table border="2">
+        <tr>
+          <td colspan="5">1</td>
+        </tr>
+        <tr>
+          <td rowspan="3">2</td>
+          <td colspan="3">3</td>
+        </tr>
+        <tr>
+          <td rowspan="2">4</td>
+          <td colspan="2">5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+      </table>
+      <hr />
+      <h3>FORMS</h3>
+      <!-- The <form> tag is used to collect user input and send it to a server or process it. -->
+      <!-- two important attributes=action: URL where form data is sent.
+               method: specifies the entered data in form is sent to destination, HTTP method (GET or POST) -->
+      <!-- <input> – Single-line input (text, email, password, etc.)
+           <textarea> – Multi-line input.
+            <select> – Dropdown.
+            <label> – Describes the input field.-->
+
+    <form action="#">
+        <label>Enter your name
+        <input type="text"></label><br>
+        <label>Enter your roll no
+        <input type="text"></label><br>
+        <label>Enter password<input type="password">
+            </label><br>
+            <label>Select <input type="radio">section a</label>
+            <label><input type="radio">section b</label><br>
+
+            <label>Want canteen food? <input type="checkbox"></label><br>
+
+            <select name="class" >
+                <option value="class">Select</option>
+                <option value="class">class11</option>
+                <option value="class">class12</option>
+            </select>
+            <br>
+    
+        <textarea name="comment" id="">Type message</textarea><br>
+        <button type="submit">Submit</button>
+        <!-- <input type="button">submit</input> -->
+    </form>
+    <hr>
+    <h3>IMAGES</h3>
+    <img src="https://plus.unsplash.com/premium_photo-1750604543641-a9396d17e69b?q=80&w=839&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" height="200"alt="dog">
+    <hr>
+    <img src="./wall.jpg"  width="300" height="200"alt="anime">
+    <hr>
+    <h3>VIDEOS</h3>
+    <!-- controls – Adds play, pause, volume controls
+      autoplay – Starts playing automatically
+      muted – Mutes the video by default
+      loop – Repeats the video
+      width / height – Sets video size -->
+    <video width="300" height="200" controls loop>
+        <source src="cartoon.mp4" type="">
+    </video>
+    <video control loop src="cartoon.mp4"></video>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/JgDNFQ2RaLQ?si=YeiYFhfZPzos-NO6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
+<hr>
+<h3>Frame</h3>
+<!-- Frames were used in older versions of HTML to display multiple HTML documents in one browser window using the <frameset> and <frame> tags.-->
+    <frameset cols="50%,50%">
+  <frame src="page1.html">
+  <frame src="page2.html">
+</frameset>
+<!-- replaced by iframe -->
+  <hr>
+    <h3>Sematic tags</h3>
+    <!-- Semantic tags clearly describe the meaning and structure of the content they contain, making code more readable, accessible, and SEO-friendly. -->
+     <main>
+  <header>
+    <h1>My Blog</h1>
+  </header>
+
+  <article>
+    <h2>Semantic HTML</h2>
+    <p>Semantic tags improve readability and SEO.</p>
+  </article>
+
+  <aside>
+    <p>Related Links</p>
+  </aside>
+
+  <footer>
+    <p>© 2025 My Blog</p>
+  </footer>
+</main>
+<!-- | Tag            | Purpose                                                        |
+| -------------- | -------------------------------------------------------------- |
+| `<header>`     | Defines the top section (like a page or article header)        |
+| `<nav>`        | Defines navigation links/menu                                  |
+| `<main>`       | Defines the main content of the page                           |
+| `<section>`    | Groups related content into sections                           |
+| `<article>`    | Represents a self-contained piece of content (e.g., blog post) |
+| `<aside>`      | Content indirectly related (like a sidebar)                    |
+| `<footer>`     | Defines the bottom section (page or article footer)            |
+| `<figure>`     | Wraps media elements like images with captions                 |
+| `<figcaption>` | Caption for a `<figure>`                                       |
+| `<mark>`       | Highlights text                                                |
+| `<time>`       | Represents a date/time                                         |
+ -->
+  <hr>
+    <h3>Html parsing</h3>
+    <!-- HTML Parser scans html code line by line Converts it into a DOM (Document Object Model) tree
+Browser then uses the DOM to render the webpage visually
+-->
+
+
+
+    </div>
+  </body>
+</html>
